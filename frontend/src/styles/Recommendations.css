@@ -1,0 +1,39 @@
+.recommendations-section {
+  padding: 90px 8%;
+
+  background:
+    radial-gradient(
+      circle at 50% 100%,
+      rgba(229, 9, 20, 0.12),
+      transparent 60%
+    ),
+    #141418;
+
+  border-top: 1px solid #27272a;
+  border-bottom: 1px solid #27272a;
+
+  text-align: center;
+}
+
+.recommendations-content {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.recommendations-icon {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.recommendations-content h2 {
+  margin: 15px 0 20px;
+
+  font-size: clamp(28px, 4vw, 42px);
+  letter-spacing: -1px;
+}
+
+.recommendations-content > p:last-child {
+  color: #a1a1aa;
+  font-size: 17px;
+  line-height: 1.7;
+}

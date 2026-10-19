@@ -1,0 +1,14 @@
+#root {
+  width: 100%;
+  max-width: 1600px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+
+  background: #0d0d0f;
+  color: white;
+}

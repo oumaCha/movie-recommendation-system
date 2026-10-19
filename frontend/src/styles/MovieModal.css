@@ -1,0 +1,158 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+
+  width: 100%;
+  max-width: 850px;
+  max-height: 90vh;
+
+  overflow-y: auto;
+
+  background: #18181b;
+
+  border: 1px solid #303036;
+  border-radius: 18px;
+
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.6);
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  width: 40px;
+  height: 40px;
+
+  background: #27272a;
+  color: white;
+
+  border: none;
+  border-radius: 50%;
+
+  font-size: 18px;
+  cursor: pointer;
+
+  z-index: 2;
+}
+
+.modal-close:hover {
+  background: #e50914;
+}
+
+.modal-body {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+
+  gap: 35px;
+  padding: 40px;
+}
+
+.modal-poster img {
+  display: block;
+
+  width: 100%;
+  aspect-ratio: 2 / 3;
+
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.modal-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  padding-top: 20px;
+}
+
+.modal-genre {
+  padding: 8px 14px;
+
+  background: rgba(229, 9, 20, 0.1);
+  color: #ff4d57;
+
+  border: 1px solid rgba(229, 9, 20, 0.3);
+  border-radius: 30px;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.modal-info h2 {
+  margin: 20px 0;
+
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.modal-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  color: #a1a1aa;
+  font-size: 15px;
+}
+
+.modal-description {
+  margin: 25px 0;
+
+  color: #a1a1aa;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.similar-button {
+  padding: 15px 25px;
+
+  background: #e50914;
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.similar-button:hover {
+  background: #b80710;
+}
+
+@media (max-width: 650px) {
+  .modal-body {
+    grid-template-columns: 1fr;
+    padding: 25px;
+  }
+
+  .modal-poster {
+    max-width: 220px;
+    margin: 0 auto;
+  }
+
+  .modal-info {
+    padding-top: 0;
+  }
+
+  .modal-info h2 {
+    font-size: 28px;
+  }
+}
